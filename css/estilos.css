@@ -172,11 +172,10 @@ color: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px;
 }
 
-#paquete_turistico h1{
-    margin-top: 50px;
-}
+
 
 .contenido {
     display: flex;
@@ -186,14 +185,16 @@ color: #000000;
   
 .contenido__imagen {
     margin-right: 20px;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-left: 50px ;
+    overflow: hidden;
 }
 
 .contenido__imagen img{
-    min-width: 300px;
-    min-height: 300px;
+    max-width: 300px;
+    max-width: 300px;
+    object-fit:cover;
 }
 
 .contenido__p{
@@ -216,13 +217,41 @@ color: #000000;
 }
 
 .contenido__mapa iframe {
-    min-height: 200px;
-    min-width: 200px;
+    max-height: 300px;
+    max-width: 300px;
 }
   
-.tabla {
-    margin-top: 20px;
+table {
+    margin-top: 40px;
+    padding: 20px;
     text-align: center;
+    border: #000000 2px solid;
+    background-color: #a36217;
+    border-collapse: collapse;
+    
+}
+
+table tbody{
+    border: #000000 2px solid;
+}
+
+table thead{
+    background-color: #a36217;
+    
+}
+
+table tr{
+    border: #000000 2px solid;
+}
+
+table td{
+    border: #000000 2px solid;
+}
+
+table th{
+    border: #000000 2px solid;
+    margin: 10px;
+    padding: 10px;
 }
   
 @media screen and (max-width: 768px) {
@@ -682,12 +711,15 @@ footer.pie::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .paqTur__contenido__imagen img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
     max-width: 400px;
+    max-height: 300px;
 }
 
 .paqTur__contenido__p {
