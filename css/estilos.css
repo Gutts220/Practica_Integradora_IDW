@@ -7,7 +7,7 @@
 
 
 header {
-    background-color: #FFA733;
+  padding-top: 60px;
 }
   
 .bg-color{
@@ -503,8 +503,9 @@ table th{
     background: #FFA733;
     color: #F0E771;
     padding: 20px 0;
+    top: 0;
     width: 100%;
-    position: sticky; 
+    position: fixed; 
 }
 
 .container {
