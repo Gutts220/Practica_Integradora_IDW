@@ -686,7 +686,7 @@ footer.pie::before {
 
 /* Carrusel de Imagenes */
 
-.carousel {
+.carrusel {
     position: relative;
     width: 80%;
     max-width: 800px;
@@ -694,12 +694,12 @@ footer.pie::before {
     overflow: hidden;
 }
 
-.carousel-container {
+.carrusel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-slide {
+.carrusel-imagen {
     min-width: 100%;
     display: flex;
     flex-direction: row;
@@ -717,7 +717,7 @@ footer.pie::before {
 .paqTur__contenido__imagen img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This ensures the image covers the area without distortion */
+    object-fit: cover; 
     max-width: 400px;
     max-height: 300px;
 }

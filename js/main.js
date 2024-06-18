@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const marcaBtn = document.querySelector('.marca-btn');
     const containerItems = document.querySelector('.container-items');
     //constantes de carrusel
-    const slides = document.querySelectorAll('.carousel-slide');
+    const imagenes = document.querySelectorAll('.carrusel-imagen');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
-    const totalSlides = slides.length;
-    let currentSlide = 0;
+    const totalImagen = imagenes.length;
+    let imagenActual = 0;
 
     // Navbar responsive
     marcaBtn.addEventListener('click', function () {
@@ -17,32 +17,32 @@ document.addEventListener('DOMContentLoaded', function () {
     
     //carrusel de imagenes
     function updateCarousel() {
-        const offset = -currentSlide * 100;
-        document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+        const offset = -imagenActual * 100;
+        document.querySelector('.carrusel-container').style.transform = `translateX(${offset}%)`;
     }
 
-    function goToPrevSlide() {
-        currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+    function anteriorImagen() {
+        imagenActual = (imagenActual > 0) ? imagenActual - 1 : totalImagen - 1;
         updateCarousel();
     }
 
-    function goToNextSlide() {
-        currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+    function siguienteImagen() {
+        imagenActual = (imagenActual < totalImagen - 1) ? imagenActual + 1 : 0;
         updateCarousel();
     }
 
-    function handleSlideClick(event) {
+    function clickEnImagen(event) {
         const url = event.currentTarget.getAttribute('data-url');
         window.location.href = url;
     }
 
-    slides.forEach(slide => {
-        slide.addEventListener('click', handleSlideClick);
+    imagenes.forEach(imagen => {
+        imagen.addEventListener('click', clickEnImagen);
     });
 
-    prevBtn.addEventListener('click', goToPrevSlide);
-    nextBtn.addEventListener('click', goToNextSlide);
+    prevBtn.addEventListener('click', anteriorImagen);
+    nextBtn.addEventListener('click', siguienteImagen);
 
-    // Auto-play functionality (optional)
-    setInterval(goToNextSlide, 10000);
+    // seteamos un intervalo de tiempo para que pase automaticamente a la siguiente imagen
+    setInterval(siguienteImagen, 10000);
 });
