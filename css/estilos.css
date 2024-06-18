@@ -175,7 +175,6 @@ color: #000000;
 }
 
 
-
 .contenido {
     display: flex;
     justify-content: center;
@@ -634,59 +633,82 @@ table th{
 /* pie de pagina */
 
 footer.pie {
-    background-color: #FFA733;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto;
-    position: relative;
+  background-color: #FFA733;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+  position: relative;
+}
+
+#tiempo {
+  font-size: 30px;
+}
+
+.reloj {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pie_items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 
 .pie_item {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .nav-link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #F0E771;
-    transform: scale(1.1);
+  color: #F0E771;
+  transform: scale(1.1);
 }
 
 .brand {
-    margin-top: 20px;
-    font-size: 14px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 footer.pie::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(to right, #FFA733, #333);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, #FFA733, #333);
 }
 
 @media (max-width: 768px) {
-    .pie_items {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .pie_items {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .reloj {
+      position: static;
+      margin: 20px auto 0;
+      transform: none;
+  }
 }
 
 /* Carrusel de Imagenes */

@@ -9,6 +9,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalImagen = imagenes.length;
     let imagenActual = 0;
 
+    //constantes de reloj
+    
+    //función reloj
+
+    function actualizarReloj(){
+       let objetoHora = new Date();
+       let hora = padNum(objetoHora.getHours());
+       let minutos = padNum(objetoHora.getMinutes());
+       let  temp = hora + ":" + minutos;
+       document.getElementById("tiempo").textContent = temp;
+       setTimeout(actualizarReloj, 1000);
+    }
+    
+    
+    function padNum(numero){
+       return numero < 10 ? "0" + numero : numero;
+    }
+
+    actualizarReloj();
+    
     // Navbar responsive
     marcaBtn.addEventListener('click', function () {
         containerItems.classList.toggle('active');
@@ -45,4 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // seteamos un intervalo de tiempo para que pase automaticamente a la siguiente imagen
     setInterval(siguienteImagen, 10000);
+    //para que se actualice el reloj
+    
 });
