@@ -7,24 +7,23 @@
 
 
 header {
-    background-color: #ee9126;
-    padding: 10px;
+    background-color: #FFA733;
 }
   
 .bg-color{
-    background-color: #ee9126;
+    background-color: #FFA733;
 }
 
 
 /*body*/
 
 body{
-    background: #ee91267e;
+    background: #F0D871;
 }
 
 /*Contenido pagina principal*/ 
 
-#paquetes-turisticos {
+#paquetes_turisticos {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -33,7 +32,7 @@ body{
     padding: 0 40px;
 }
   
-#paquetes-turisticos .T1 {
+#paquetes_turisticos .T1 {
     margin: 40px 0;
     font-size: 40px;
 }
@@ -59,7 +58,7 @@ color: #000000;
 }
   
 .paqTur h3 a:hover {
-    color: #ee9126;
+    color: #FFA733;
     font-size: 35px;
 }
   
@@ -91,7 +90,7 @@ color: #000000;
 }
   
 .paqTur__contenido__p a:hover {
-    color: #ee9126;
+    color: #FFA733;
     font-size: large;
 }
   
@@ -143,7 +142,7 @@ color: #000000;
 /*Paquetes Turisticos*/
 
 .selectores{
-    background: #ee912673;
+    background: #F0A171;
 }
 
 .selectores__mes{
@@ -208,7 +207,7 @@ color: #000000;
 }
 
 .contenido__p a:hover{
-    color: #ee9126;
+    color: #FFA733;
 }
   
 .contenido__mapa {
@@ -226,7 +225,7 @@ table {
     padding: 20px;
     text-align: center;
     border: #000000 2px solid;
-    background-color: #a36217;
+    background-color: #F0A171;
     border-collapse: collapse;
     
 }
@@ -236,7 +235,7 @@ table tbody{
 }
 
 table thead{
-    background-color: #a36217;
+    background-color: #F0A171;
     
 }
 
@@ -304,7 +303,7 @@ table th{
 
 .btn {
     background-color: #ffffff;
-    color: #ee9126;
+    color: #FFA733;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -313,7 +312,7 @@ table th{
   }
   .btn:hover {
     color: #ffffff;
-    background-color: #ee9126;
+    background-color: #FFA733;
   }
   
   /* Código de lugares recomendados y paquetes Turisticos */
@@ -335,7 +334,7 @@ table th{
     color: #000000;
   }
   .paquete h3 a:hover {
-    color: #ee9126;
+    color: #FFA733;
     font-size: 35px;
   }
   .paquete__contenido {
@@ -368,7 +367,7 @@ table th{
     text-decoration: none;
   }
   .paquete__contenido__p a:hover {
-    color: #ee9126;
+    color: #FFA733;
     font-size: large;
   }
   
@@ -400,11 +399,11 @@ table th{
   
   /* Código CSS de selectores para búsqueda */
   .selectores .form-select {
-    color: #ee9126;
+    color: #FFA733;
   }
   .selectores button {
     background-color: #ffffff;
-    color: #ee9126;
+    color: #FFA733;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -413,7 +412,7 @@ table th{
   }
   .selectores button:hover {
     color: #ffffff;
-    background-color: #ee9126;
+    background-color: #FFA733;
   }
   
   /* página de Contacto */
@@ -427,7 +426,7 @@ table th{
     margin-top: 50px;
     margin-bottom: 100px;
     padding-top: 25px;
-    background-color: #ee9126;
+    background-color: #FFA733;
   }
 
   .contacto h2 {
@@ -461,7 +460,7 @@ table th{
   }
   .contacto button {
     background-color: #ffffff;
-    color: #ee9126;
+    color: #FFA733;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -472,7 +471,7 @@ table th{
 
   .contacto button:hover {
     color: #ffffff;
-    background-color: #a36217;
+    background-color: #F0A171;
   }
 
   @media only screen and (max-width: 480px) {
@@ -501,9 +500,11 @@ table th{
   /* navbar */
 
 .navbar {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #FFA733;
+    color: #F0E771;
+    padding: 20px 0;
+    width: 100%;
+    position: sticky; 
 }
 
 .container {
@@ -538,6 +539,7 @@ table th{
     margin: 6px 0;
     transition: 0.4s;
 }
+
 
 .container-items {
     display: flex;
@@ -575,18 +577,18 @@ table th{
 
 .btn {
     padding: 5px 10px;
-    background: #ee9126;
-    color: #fff;
+    background: #F0E1C0;
+    color: #FFA733;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn:hover {
-    background: #cc751f;
+    background: #F0A171;
 }
 
-/* navbar responsive */
+/* Para hacer el navbar responsive */
 @media (max-width: 768px) {
     .marca-btn {
         display: block;
@@ -623,13 +625,15 @@ table th{
 
     .btn {
         width: 60px;
+        text-align: center;
     }
+
 }
 
 /* pie de pagina */
 
 footer.pie {
-    background-color: #333;
+    background-color: #FFA733;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -657,7 +661,7 @@ footer.pie {
 }
 
 .nav-link:hover {
-    color: #ee9126;
+    color: #F0E771;
     transform: scale(1.1);
 }
 
@@ -674,7 +678,7 @@ footer.pie::before {
     transform: translateX(-50%);
     width: 80%;
     height: 2px;
-    background: linear-gradient(to right, #ee9126, #333);
+    background: linear-gradient(to right, #FFA733, #333);
 }
 
 @media (max-width: 768px) {
